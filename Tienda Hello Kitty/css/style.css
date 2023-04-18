@@ -1,0 +1,377 @@
+/* Google Fonts
+Poppins 400, 500, 600, 700, 800 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Limpieza */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2D343C;
+}
+
+.container {
+    max-width: 1000px; /* Original 1200px */
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
+        url(../img/fondo2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 70vh; /* Me trae un poco de conflicto pero al final funciona */
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #F35200;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: #FFFFFF;
+}
+
+.borrar {
+    background-color: #F35200;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-weight: 800;
+}
+
+.header-txt {
+    padding: 0 200px;
+    text-align: center;
+}
+
+.header-txt h1 {
+    font-size: 70px;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: #ECEBEB;
+    margin-bottom: 20px;
+}
+
+/* Productos */
+.products {
+    padding: 70px 0 0 0;
+    text-align: center;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.products-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Acomodo los productos en columnas de 3 */
+    grid-gap: 35px;
+}
+
+.product img {
+    width: 250px;
+}
+
+.product h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #ECEBEB;
+    margin-bottom: 10px;
+}
+
+.precio {
+    color: #F35200 !important; /* Sobrescribe el color que le pusimos */
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 8px 17px;
+    border: 1px solid #F35200;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+.btn-2:hover {
+    background-color: #F35200;
+}
+
+/* Contacto */
+.news {
+    margin-top: 100px;
+    padding: 100px 0;
+    background-color: #4e0a60;
+}
+
+.news-content {
+    display: flex;
+    align-items: center;
+}
+
+.news-1 {
+    padding-left: 100px;
+    width: 50%;
+}
+
+.news-1 h3 {
+    font-size: 30px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.news-1 p {
+    color: #DCDCDC;
+}
+
+.news-2 {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 450px;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    margin-right: 10px;
+}
+
+.btn-1 {
+    width: 150px;
+    display: inline-block;
+    background-color: #F5BE20;
+    color: #FFFFFF;
+    padding: 13px 35px;
+    border-radius: 25px;
+    text-transform: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #F35200;
+}
+
+/* Mapa */
+.map { /* Para poner un filtro gris al mapa */ 
+    -webkit-filter: grayscale(100%);
+}
+
+/* Footer */
+.footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.link h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00C3FF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.link a {
+    font-size: 16px;
+    color: #ECEBEB;
+    margin-bottom: 10px;
+    display: block;
+    transition: all .3s ease;
+}
+
+.link a:hover {
+    color: #F35200;
+    padding-left: 6px;
+}
+
+.social-link {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.social-link h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00C3FF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+@media(max-width:911px) {
+    
+    /* Header - Menu */
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #2D343C;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-txt {
+        padding: 0;
+    }
+
+    /* Productos */
+    .products {
+        padding: 30px;
+    }
+
+    .products-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Contacto */
+    .news {
+        padding: 30px;
+    }
+
+    .news-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .news-1, .news-2 {
+        padding: 0;
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

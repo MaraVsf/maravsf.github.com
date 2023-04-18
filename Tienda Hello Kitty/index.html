@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitty Merch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+
+    <!--  Menu Responsivo  -->
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Kitty Merch</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#lista-1">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#mapa">Ubicación</a></li>
+                </ul>
+            </nav>
+
+            <!--  Carrito  -->
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="img/car.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Kitty Merch</h1>
+                <p>
+                    Venta de indumentaria, bolsos y merchandising 
+                    de Hello Kitty
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!--  Productos: Indumentaria  -->
+    <section class="products container" id="lista-1">
+        <h2>Indumentaria</h2>
+
+        <div class="products-content">
+            <!--  Producto 1  -->
+            <div class="product">
+                <img src="img/Ind1.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Remera</h3>
+                    <p>Talles S/M/L</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 2  -->
+            <div class="product">
+                <img src="img/Ind2.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Buzo negro</h3>
+                    <p>Talles M/L</p>
+                    <p class="precio">$4500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 3  -->
+            <div class="product">
+                <img src="img/Ind3.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Buzo dos colores</h3>
+                    <p>Talles M/L</p>
+                    <p class="precio">$5000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 4  -->
+            <div class="product">
+                <img src="img/Ind4.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Buzo celeste</h3>
+                    <p>Talles S/M/L</p>
+                    <p class="precio">$4200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 5  -->
+            <div class="product">
+                <img src="img/Ind5.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Buzo black&white</h3>
+                    <p>Talles M/L</p>
+                    <p class="precio">$5000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 6  -->
+            <div class="product">
+                <img src="img/Ind6.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Gorros</h3>
+                    <p>Colores Negro/Rosa/Celeste/Blanco</p>
+                    <p class="precio">$1000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 7  -->
+            <div class="product">
+                <img src="img/Ind7.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Zapatillas violeta</h3>
+                    <p>Talles 38/39/40</p>
+                    <p class="precio">$6200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 8  -->
+            <div class="product">
+                <img src="img/Ind8.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Zapatillas White</h3>
+                    <p>Talles 38/39/40</p>
+                    <p class="precio">$6000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 9  -->
+            <div class="product">
+                <img src="img/Ind9.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Zapatillas rosas</h3>
+                    <p>Talles 38/39/40</p>
+                    <p class="precio">$5800</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="9">Agregar al carrito</a>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Productos: Bolsos  -->
+    <section class="products container" id="lista-2">
+        <h2>Bolsos</h2>
+
+        <div class="products-content">
+            <!--  Producto 1  -->
+            <div class="product">
+                <img src="img/B1.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mochila premium</h3>
+                    <p>Colores Rosa/Negro/Violeta/Celeste</p>
+                    <p class="precio">$5200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="10">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 2  -->
+            <div class="product">
+                <img src="img/B2.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Bolso felpudo</h3>
+                    <p>Colores Rosa/Verde/Violeta/Celeste</p>
+                    <p class="precio">$4200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="11">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 3  -->
+            <div class="product">
+                <img src="img/B3.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mochila felpudo</h3>
+                    <p>Colores Rosa//Celeste</p>
+                    <p class="precio">$4200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="12">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 4  -->
+            <div class="product">
+                <img src="img/B4.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Cartera</h3>
+                    <p>Colores Rosa/Negro/Amarillo/Celeste</p>
+                    <p class="precio">$4500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="13">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 5  -->
+            <div class="product">
+                <img src="img/B5.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Cartera felpudo</h3>
+                    <p>Colores Rosa/Blanco/Violeta</p>
+                    <p class="precio">$4200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="14">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 6  -->
+            <div class="product">
+                <img src="img/B6.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mochila escolar</h3>
+                    <p>Colores Blanco/Celeste</p>
+                    <p class="precio">$5500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="15">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos: Bazar  -->
+    <section class="products container" id="lista-3">
+        <h2>Bazar</h2>
+
+        <div class="products-content">
+            <!--  Producto 1  -->
+            <div class="product">
+                <img src="img/Bazar1.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Llavero</h3>
+                    <p>Colores Rosa/Negro/Celeste</p>
+                    <p class="precio">$1200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="16">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 2  -->
+            <div class="product">
+                <img src="img/Bazar2.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Almohada de viaje</h3>
+                    <p>Colores Rosa/Negro/Amarillo</p>
+                    <p class="precio">$2200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="17">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 3  -->
+            <div class="product">
+                <img src="img/Bazar3.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Set llavero</h3>
+                    <p>Colores Rosa/Negro/Amarillo</p>
+                    <p class="precio">$1900</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="18">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 4  -->
+            <div class="product">
+                <img src="img/Bazar4.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Peluche</h3>
+                    <p>Colores Negro/Gris/Blanco</p>
+                    <p class="precio">$3200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="19">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 5  -->
+            <div class="product">
+                <img src="img/Bazar5.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Billetera</h3>
+                    <p>Colores Rosa/Celeste</p>
+                    <p class="precio">$2000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="20">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!--  Producto 6  -->
+            <div class="product">
+                <img src="img/Bazar6.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Colita para el pelo</h3>
+                    <p>Colores Rosa/Negro</p>
+                    <p class="precio">$600</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="21">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion para contenido nuevo -->
+    <section class="news" id="contacto">
+
+        <div class="news-content container">
+            <div class="news-1">
+                <h3>Subscribete a las noticias</h3>
+                <p>
+                    Para estar enterado de todas las novedades y descuentos
+                </p>
+            </div>
+
+            <!-- Para un formulario -->
+            <div class="news-2">
+                <form>
+                    <input type="email" placeholder="Email">
+                    <input type="submit" class="btn-1" value="Enviar">
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Seccion Mapa -->
+    <!-- Buscar por google map y copiar en Incorporar un mapa -->
+    <section class="maps" id="mapa">
+        <!-- Agregar class map <> a la class de la section -->
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.0504194514226!2d-60.64244951191225!3d-32.945684373364614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab17bc73758d%3A0x394e6efa15099d6f!2sC%C3%B3rdoba%201342%2C%20S2000AWT%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1681294819985!5m2!1ses!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Modificar para que ocupe toda la pantalla lo siguiente: width="100%" height="500" -->
+    </section>
+
+    <!--  Footer  -->
+    <footer class="footer container">
+        <div class="link">
+            <h3>Productos</h3>
+            <ul>
+                <li><a href="#lista-1">Indumentaria</a></li>
+                <li><a href="#lista-2">Bolsos</a></li>
+                <li><a href="#lista-3">Bazar</a></li>
+            </ul>
+        </div>
+
+        <div class="link">
+            <h3>Ayuda</h3>
+            <ul>
+                <li><a href="#">¿Cómo comprar?</a></li>
+                <li><a href="#">Formas de pago</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+
+        <div class="link">
+            <h3>Mi cuenta</h3>
+            <ul>
+                <li><a href="#">Detalles de la cuenta</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Contraseña perdida</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+            </ul>
+        </div>
+
+        <div class="social-link">
+            <h3>Siguenos</h3>
+            <div>
+                <a href="#"><img src="img/tw.svg" alt=""></a>
+                <a href="#"><img src="img/inst.svg" alt=""></a>
+                <a href="#"><img src="img/face.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
